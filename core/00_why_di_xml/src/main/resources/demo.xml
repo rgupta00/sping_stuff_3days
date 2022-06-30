@@ -7,8 +7,9 @@
 	<!-- auto wiring: aka shortcut -->
 	<!-- xml config: bean wiring -->
 	<!-- bean wring: singleton , eager scope="prototype/..."-->
+	<!--  lazy-init="false" -->
 	
-	<bean id="p" class="com.demo.Passanger" autowire="byType" lazy-init="false">
+	<bean id="p" class="com.demo.Passanger" autowire="byType">
 		<property name="name" value="Lee"/>
 	</bean>
 
