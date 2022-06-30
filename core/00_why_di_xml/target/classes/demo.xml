@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- spring dont care about dest of bean till u dont configure shutdown* hook -->
+	<!-- auto wiring: aka shortcut -->
+	<!-- xml config: bean wiring -->
+	<!-- bean wring: singleton , eager scope="prototype/..."-->
+	
+	<bean id="p" class="com.demo.Passanger" autowire="byType" lazy-init="false">
+		<property name="name" value="Lee"/>
+	</bean>
+
+	<!-- primary="true" vs  autowire-candidate="false"-->
+	 <bean id="v1" class="com.demo.Bike" primary="true"/>
+	 <bean id="v2" class="com.demo.Car"  />
+	
+</beans>
