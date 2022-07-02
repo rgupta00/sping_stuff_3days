@@ -2,7 +2,7 @@ package com.orderapp.dto;
 
 import java.time.LocalDate;
 
-public class Order {
+public class OrderResponse {
 	private String id;
 	private double totalAmount;
 	private LocalDate orderDate;
@@ -38,7 +38,7 @@ public class Order {
 	public void setProduct(Product product) {
 		this.product = product;
 	}
-	public Order(String id, double totalAmount, LocalDate orderDate, Customer customer, Product product) {
+	public OrderResponse(String id, double totalAmount, LocalDate orderDate, Customer customer, Product product) {
 		super();
 		this.id = id;
 		this.totalAmount = totalAmount;
@@ -46,7 +46,7 @@ public class Order {
 		this.customer = customer;
 		this.product = product;
 	}
-	public Order() {
+	public OrderResponse() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

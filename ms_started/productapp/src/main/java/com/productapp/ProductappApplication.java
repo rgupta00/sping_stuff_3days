@@ -4,10 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-import com.productapp.model.dao.Product;
 import com.productapp.model.service.ProductService;
-
+@EnableDiscoveryClient
 @SpringBootApplication
 public class ProductappApplication implements CommandLineRunner {
 
